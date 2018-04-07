@@ -13,7 +13,7 @@
       <button type='warn' style='width:100%;margin-right:70rpx;' bindtap="withdraw">提现</button>
     </view>
   </view>
-  <view class="my-item" style='background:none;display:flex;'>
+  <view class="my-item" style='background:none;display:none;'>
     <view>当前积分 {{score}} </view>
     <button wx:if="{{score_sign_continuous == 0}}" style='height:80rpx;margin-right:70rpx;' bindtap="scoresign">每日签到</button>
     <button wx:if="{{score_sign_continuous > 0}}" disabled='true' style='height:80rpx;margin-right:70rpx;'>已连续{{score_sign_continuous}}天签到</button>
